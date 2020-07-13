@@ -405,6 +405,3 @@ class NoShapeGeometry:
     @property
     def off_geometry(self) -> OFFGeometry:
         return OFFCube
-
-    def as_dict(self) -> None:
-        return None

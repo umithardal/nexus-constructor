@@ -393,13 +393,13 @@ class Component(Group):
             return {
                 "type": "group",
                 "name": SHAPE_GROUP_NAME,
-                "children": [],
+                "children": [self.shape[0].as_dict()],
             }
         else:
             return {
                 "type": "group",
                 "name": PIXEL_SHAPE_GROUP_NAME,
-                "children": [],
+                "children": [],  # todo
             }
 
     def as_dict(self) -> Dict[str, Any]:
